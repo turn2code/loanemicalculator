@@ -7,7 +7,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 import EMICalculator from './components/EmiCalculator';
-import Simple from './simple'; 
+import Simple from './Simple'; 
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -15,7 +15,7 @@ const Tab = createBottomTabNavigator();
 const MainAppTabs = () => (
   <Tab.Navigator>
     <Tab.Screen name="EMI Calculator" component={EMICalculator} />
-    
+
     {/* You can add more Tab Screens here */}
   </Tab.Navigator>
 );
